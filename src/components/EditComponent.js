@@ -4,7 +4,8 @@ import { update } from '../store/actions/newsActions';
 
 
 const EditComponent=({newsItem})=> {
-const dispatch = useDispatch();
+const dispatch = useDispatch(); 
+
 const [editForm, setEditForm]= useState(newsItem.text);
 console.log(editForm);
 const handleEdit = (e) => {
